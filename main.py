@@ -7,7 +7,7 @@ import cv2
 import os
 
 
-UPLOAD_FOLDER = '/static/files'
+UPLOAD_FOLDER = 'static/files'
 ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg', 'gif'}
 
 app = Flask(__name__)
