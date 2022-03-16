@@ -11,7 +11,7 @@ UPLOAD_FOLDER = 'static/files'
 ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg', 'gif'}
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'xdxdxdxdxd665132135'
+app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 Bootstrap(app)
 
